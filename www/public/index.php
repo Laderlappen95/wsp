@@ -6,7 +6,7 @@
    <title>Document</title>
 </head>
 <body>
-   <H1>DETTA ÄR NYTT!</H1>
+   <H1>Elliot</H1>
    <form action="uppg1.php" method="post">
       <fieldset>
          <legend>

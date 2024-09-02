@@ -9,12 +9,14 @@
     <?php
     
     function cleanData($data){
+        try{
         for($i =1 ;$i<5;$i++){
             $data[$i] = strip_tags($data[$i]);
             $data[$i] = stripslashes($data[$i]);
             $data[$i] = trim($data[$i]);
             echo $data[$i] . "<br>";
         }
+        }catch(Exception $e){}
     }
 
     ?>

@@ -52,7 +52,7 @@
     echo("Multiplikation " . $prod . " Subtraktion " . $diff . " Addition " . $sum . " Divistion " . $kvot);
     ?>
     
-    <form action="uppg5.php" method="post"> 
+    <form action="" method="post"> 
       <fieldset>
          <legend>Konto</legend>
          <label>Förnamn</label>
@@ -66,6 +66,19 @@
          <input type="submit" value="Skicka">
       </fieldset>
     </form>
+    
+    <?php
+         include('cleanseData.php');
+            if(isset($_POST['firstname'])){
+            $user[1] = $_POST['firstname'];
+            $user[2] = $_POST['lastname'];
+            $user[3] = $_POST['username'];
+            $user[4] = $_POST['password'];
+            
+            cleanData($user);   
+            }   
+            
+    ?>
 
    
 </body>
